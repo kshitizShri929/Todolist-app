@@ -1,0 +1,146 @@
+.content {
+  display: flex;
+  max-width: 922px;
+  margin: auto;
+}
+
+.sidebar {
+  user-select: none;
+  width: 266px;
+  height: 100vh;
+  padding-top: 74px;
+  border-right: 1px solid #f1f1f1;
+  background-color: #fafafa;
+}
+
+.sidebar > div {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.sidebar > div > .active {
+  background-color: white;
+}
+
+.sidebar > div > .icon {
+  margin-right: 10px;
+}
+
+.tasks {
+  background-color: white;
+  height: 100vh;
+  width: calc(922px - 266px);
+  padding: 74px 20px 0;
+}
+
+.tasks > .add-task-btn {
+  cursor: pointer;
+}
+
+.tasks > .add-task-btn > .plus {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.add-btn {
+  background-color: green;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.cancel-btn {
+  background-color: red;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.add-task-text {
+  color: #545454;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.tasks > .add-task-dialog {
+  margin-top: 10px;
+}
+
+.tasks > .add-task-dialog > input {
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 3px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tasks > .add-task-dialog > .add-task-actions-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks > .add-task-dialog > .add-task-actions-container > .add-btn {
+  background-color: #db4c13;
+  color: white;
+  border: 1px solid transparent;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 6px 12px 7px 12px;
+  border-radius: 3px !important;
+}
+
+.tasks > .add-task-dialog > .add-task-actions-container > .add-btn:disabled {
+  background-color: gray;
+}
+
+.tasks > .add-task-dialog > .add-task-actions-container > .add-btn:active {
+  transform: scale(0.9);
+}
+
+.tasks > .add-task-dialog > .cancel-btn {
+  all: unset;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0px 5px;
+}
+
+.tasks > .task-items-container {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.tasks > .task-items-container > .task-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks > .task-items-container > .task-item:not(:last-child) {
+  border-bottom: 1px solid #db4c3f;
+}
+
+.DayPickerInput > input {
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+}

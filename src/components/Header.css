@@ -1,0 +1,18 @@
+.header {
+  border-bottom: solid 1px #ca2100;
+  background-color: red;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  height: 60px;
+  width: 100%;
+}
+
+img {
+  width: 60px;
+  margin-left: 200px;
+}
+nav {
+  height: 100%;
+  max-width: 922px;
+  display: flex;
+  align-items: center;
+}
